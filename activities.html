@@ -4,21 +4,21 @@
 <head>
     <meta charset="utf-8">
         <title>Introducing California's Greatest Cliffs</title>
+        <link href="style.css" rel="stylesheet"> 
 </head>
-<body> 
+<body id="activites"> 
     <div id="container"></div>
     <header>
-        <img src="images/cliff_ocean.jpg" alt="Ocean View Cliff" width="1280" height="564">
             <div class="main-header">
                  <div class="logo">
                     <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
                 </div>
         <nav class="main-menu"> 
             <ul>
-                <li>Home</li>
+                <li><a href="index.html">Home</a></li>
                 <li>Cliffs</li>
-                <li>Events</li>
-                <li>Contacts</li>
+                <li class="active"><a href="activites.html">Activity</a></li>
+                <li><a href="contact.html">Contacts</a></li>
             </ul>
         </nav>
     </div>
@@ -78,6 +78,28 @@
             </tr>
         </tfoot>
     </table> 
+    <Section>
+        <ul id="partners">
+            <li class="partners">
+                <img src="images/partners/partner-bustour.png" alt ="Partner Bus Tours">
+            </li>
+            <li class="partners">
+                <img src="images/partners/partner-cabinrental.png" alt ="Partner Cabin Rental">
+            </li>
+            <li class="partners">
+                <img src="images/partners/partner-cabingadv.png" alt ="Partner Camping Adventure">
+            </li>
+            <li class="partners">
+                <img src="images/partners/partner-collegetours.png" alt ="Partner College Tours">
+            </li>
+            <li class="partners">
+                <img src="images/partners/partner-rentalbike.png" alt ="Partner Bike Rentals">
+            </li>
+            <li class="partners">
+                <img src="images/partners/partner-tourgroup.png" alt ="Partner Tour Group">
+            </li>
+        </ul>
+    </Section>
 </main>
 <footer>
     <div id="nondisclaimer">
@@ -85,9 +107,9 @@
 &copy; Copyright 2020 :: GreatCliffs.com
         </div>
         <div class="social">
-            <h3>Facebook Image</h3>
-            <h3>Instagram Image</h3>
-            <h3>Twitter Image</h3>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
         </div>
     </div>
     <div id="disclaimer">

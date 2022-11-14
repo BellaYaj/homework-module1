@@ -2,30 +2,75 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
+    <head>
         <title>Introducing California's Greatest Cliffs</title>
-</head>
-<body> 
-    <div id="container"></div>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <meta charset="utf-8">
+        <style>
+            /*Header*/
+            header {
+                width: 100%;
+                min-height: 400px;
+                padding-top: 3em;
+            }
+            #home header {
+                background: no repeat lightgrey url(image/cliff_ocean.jpg);
+                background-size: 1500px;
+            }
+            .main-header {
+                background-color: rgb (255,255,255,0.8);
+                width: 700px;
+                margin: 2em auto 0 auto;
+                min-height: 100px;
+                height: 100px;
+            }
+            .main-header .logo img {
+                width: 100px;
+                height: 100px;
+                margin: 0 2em 0 0;
+                float: left;
+            }
+            /*Navigation*/
+            .main-menu {
+                margin-left: 227px;
+                font-weight: 400;
+            }
+            .main-menu ul li {
+                list-style-type: none;
+                display: inline-block;
+                float: left;
+                padding-left: 25px;
+                padding-right: 25px;
+                border-left: 1px solid rgba(202, 204, 202, 0.6);
+                line-height: 100px;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body id="home"> 
+        <link rel="stylesheet" href="style.css" />
+        <div id="container"></div>
+    </body>
     <header>
-        <img src="images/cliff_ocean.jpg" alt="Ocean View Cliff" width="1280" height="564">
-            <div class="main-header">
-                 <div class="logo">
-                    <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
+        <link rel="stylesheet" href="style.css" />
+        <div>
+                <div class="main-header">
+                     <div class="logo">
+                        <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
                 </div>
-        <nav class="main-menu"> 
-            <ul>
-                <li>Home</li>
-                <li>Cliffs</li>
-                <li>Events</li>
-                <li>Contacts</li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
+            <nav class="main-menu"> 
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li>Cliffs</li>
+                    <li><a href="activites.html">Activity</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 <main>
+    <link rel="stylesheet" href="style.css" />
     <h1>Introducing California's Greatest Cliffs</h1>
     <h2>What is so unique about California Cliffs?</h2>
     <p>California cliffs are one of a kind in the United States where no cliffs are as magnificent and beautiful as them. And California is the only state that have cliffs that fronts all possible environments: sea, river, mountains and canyons. There are four such individual unique cliffs: West Cliff, North Cliff, East Cliff and South Cliff. All offer fantastic overlooking views, recreational areas, camping sites, wildlife watch spots and overnight cabins.</p>
@@ -33,25 +78,37 @@
     <p>Located within a 100 mile radius from Irvine, California, they can be reached by roads easily. The closest cliff to Irvine is West Cliff, which is the most popular and most visited.</p>
     <Section>
         <ul id="partners">
-            <li class="partner"><h3>Partner 1 Image</h3></li>
-            <li class="partner"><h3>Partner 2 Image</h3></li>
-            <li class="partner"><h3>Partner 3 Image</h3></li>
-            <li class="partner"><h3>Partner 4 Image</h3></li>
-            <li class="partner"><h3>Partner 5 Image</h3></li>
-            <li class="partner"><h3>Partner 6 Image</h3></li>
+            <li class="partners">
+                <img src="images/partners/partner-bustour.png" alt ="Partner Bus Tours">
+            </li>
+            <li class="partners">
+                <img src="images/partners/partner-cabinrental.png" alt ="Partner Cabin Rental">
+            </li>
+            <li class="partners">
+                <img src="images/partners/partner-cabingadv.png" alt ="Partner Camping Adventure">
+            </li>
+            <li class="partners">
+                <img src="images/partners/partner-collegetours.png" alt ="Partner College Tours">
+            </li>
+            <li class="partners">
+                <img src="images/partners/partner-rentalbike.png" alt ="Partner Bike Rentals">
+            </li>
+            <li class="partners">
+                <img src="images/partners/partner-tourgroup.png" alt ="Partner Tour Group">
+            </li>
         </ul>
-        
     </Section>
 </main>
 <footer>
+     <link rel="stylesheet" href="style.css" />
     <div id="nondisclaimer">
         <div class="copy">
 &copy; Copyright 2020 :: GreatCliffs.com
         </div>
         <div class="social">
-            <h3>Facebook Image</h3>
-            <h3>Instagram Image</h3>
-            <h3>Twitter Image</h3>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
         </div>
     </div>
     <div id="disclaimer">
