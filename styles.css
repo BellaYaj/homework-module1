@@ -75,7 +75,7 @@ h3 {
 /*Partners*/
 section {
   width: 100%;
-  background-color: #4288c3;
+  background-color: none;
 }
 section #partners {
   width: 1200px;
@@ -100,6 +100,10 @@ footer {
   height: 155px;
   padding-bottom: lem;
   background-color: #ecfab8;
+}
+section #partners {
+  background-color: #4977d1;
+  width: auto;
 }
 footer #nondisclaimer .copy {
   padding: 3.5em 3.5em 3.5em 13em;
@@ -146,6 +150,7 @@ footer #nondisclaimer .social .fa-instagram {
 table {
   width: 1000px;
   margin: 4em auto 0 auto;
+  table-layout: auto;
 }
 caption {
   background: #852b1b;
@@ -183,35 +188,51 @@ td:first-child {
 h1 {
   color: #9ed034;
 }
-section #cliffpics {
-  background-color: #852b1b;
-  width: 500px;
-  padding: 0.5em 0 0 0;
-  margin: 1em;
-  text-align: center;
+  legends {
+  color: #4977d1;
+  font-weight: bold;
+  font-size: 1.3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form fieldset {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid 2px #9ed034;
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+/*Cliffs*/
+section #cliffpics {
+  background-color: #852b1b;
+  padding: 0.5em 0 0 0;
+  margin: 1em;
+  text-align: center;
+  width: 500px;
+}
 /* Three image containers (use 25% for four, and 50% for two, etc) */
+.cliff h3 {
+  color: white;
+  margin: 0;
+  width: 50%;
+  margin-bottom: 0;
+}
 .column {
   float: left;
   width: 33.33%;
   padding: 5px;
 }
-
 /* Clear floats after image containers */
 .row::after {
   content: "";
   clear: both;
-  display: table;
+  display: in-line table;
 }
 .row {
   display: flex;
 }
-
 .column {
   flex: 33.33%;
   padding: 5px;
