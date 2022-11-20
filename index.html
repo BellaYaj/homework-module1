@@ -6,10 +6,45 @@
         <link rel="stylesheet" href="styles.css" type="text/css" />
     <!--Font Awesome-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="eternal.js"></script>
     <script type="text/javascript">document.write("This is Internal Javascript Example.!!!"</script>
         <section id="timeofday">
-        <Span> Your Current Local Time:</Span>
-        <span id="clock"></span>
+            <Span> Your Current Local Time: 5:18pm</Span>
+            <span id="clock"></span>
+    <script>
+        //Create a time data funstion
+        function currentTime() {
+             //Declare variables
+            var d = new Date(); //Get current date
+            var hr = d.getMinutes(); //Get current hours
+            var min = d.getMinutes(); //Get current minutes
+            var sec = d.getSeconds(); //Get current seconds
+            var ampm; //Declare empty variables to store AM or PM
+         }
+        //Add 0 to single digits for seconds
+        if (sec < 10) { 
+            sec = "0" + sec; } 
+        //Add 0 to single digits for minutes 
+            if (min < 10) { min="0" + min; } 
+        //Determine AM or PM string 
+            if (hr == 12) {
+                ampm = "PM"; //Set to PM 
+            } else if (hr> 12) {
+                hr -= 12; 
+        //Deduct 12 from hours greater then 12 (military time)
+            ampm = "PM"; //Set to PM
+        } else {
+                ampm = "AM"; //Set to AM
+        }
+        //Assemble time format to display
+        var time = hr + ":" + min + ":" + sec + " " + ampm;
+        //Display current local time and time zone on HTML elments
+        document.getElementById("clock").innerText = time; //adding time
+        //Run time data function every 1 second
+        setInterval(currentTime, 1000); //setting timer
+        //Initial run of time data function
+        currentTime(5:18pm)
+    </script>
     </section>
     </head>
     <body id="home"> 
